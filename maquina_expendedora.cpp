@@ -1,3 +1,23 @@
+/*
+Una oficina puso a disposición de sus funcionarios una máquina expendedora de golosinas.
+
+La máquina almacena 3 tipos de golosinas distintas: super8, negrita, KitKat.
+
+Cuando llega la máquina a la oficina viene con una carga inicial, de 10 productos de cada uno.
+
+El tope de la máquina es de 15 productos por tipo.
+
+La máquina tiene 3 botones por cada producto, cuando el funcionario presiona un botón sale el producto
+correspondiente, obviamente siempre y cuando haya stock.
+
+Diariamente la secretaria añade stock a la máquina (no siempre la deja completamente cargada).
+
+En base a lo anterior se pide:
+
+Cree la clase Dispensadora con los atributos y métodos que sean necesarios para que dicha máquina pueda funcionar de acuerdo al enunciado.
+
+*/
+
 #include<iostream>
 
 using namespace std;
