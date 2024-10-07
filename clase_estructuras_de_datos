@@ -1,0 +1,103 @@
+#include<iostream>
+#include<queue> //Librerías
+#include<stack> //Librerías
+#include<map> //Librerías
+
+using namespace std;
+
+/*
+Stack y Queue: tipos abstractos de datos
+
+Stack:
+
+	LIFO (Last input first output, último en entrar último en salir)
+
+	Métodos: push, pop, size, Top
+	
+Queue:
+
+	FIFO: (First input first output, primero en entrar primero en salir
+
+	Métodos: push, pop, size, front
+
+
+*/
+
+int main(){
+	
+	queue<int> cola; //Declarar un queue que guarda elementos de tipo int
+	stack<int> pila; //Declarar un stack que guarda elementos de tipo int
+
+	cola.push(10);
+	cola.push(20);
+	cola.push(30);
+	cola.push(40);
+
+	pila.push(10);
+	pila.push(20);
+	pila.push(30);
+	pila.push(40);
+
+	cout << cola.size() << endl;
+	cout << pila.size() << endl;
+	
+	cout << cola.front() << endl; //Primer elemento (10)
+	cout << pila.top() << endl; //Último elemento (40)
+	
+	cola.pop(); //Saca el primer elemento (10)
+	pila.pop(); //Saca el último elemento (40)
+	
+	/*
+	
+	Map: estructura de datos que una llave de búsqueda y un contenido.
+	Cada elemento del arreglo tiene una llave, con la cual el elemento puede ser obtenido.
+	
+	*/
+	
+	map<string, int> sueldos; //map<[tipo de llave], [tipo de elementos]> [nombre];
+	
+	sueldos["hugo"] = 60000; //Al ser el primero, es sueldos.begin()
+	
+	//Llave: Hugo, Elemento: 60000
+	
+	sueldos["paco"] = 1200000;
+	sueldos["luis"] = 450000;
+	sueldos["jaime"] = 700000; 
+	
+	//Al final, sueldos.end()
+ 
+	cout << sueldos["paco"] << endl; //Imprime 1200000
+	cout << sueldos["laura"] << endl; //Imprime 0, pues laura no está dentro del map
+	
+	if(sueldos.find("Paco") != sueldos.end()){ //La condición se cumple cuando encuentra una llave llamada "Paco".
+		
+		cout << sueldos["Paco"] << endl;
+		
+	}else{ 
+		
+		cout << "Paco no existe" << endl;
+		
+	}
+ 
+	//Si se busca algún elemento y no lo encuentra usando la función find(), se convierte en la función end()
+
+	//La llave puede ser llamada first y el elemento second. Para usar esto se debe utilizar la sintaxis "->"
+
+	/* VECTORES:
+
+	Permiten agregar elementos sin declarar ningún tamaño, es un arreglo dinámico.
+	
+	Tiene las siguientes funciones:
+	
+	-size()
+	-empty()
+	-at()
+	-front()
+	-back()
+	-push_back()
+	-pop_back()
+	-erase(posición)
+
+	*/
+ 
+}
