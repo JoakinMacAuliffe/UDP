@@ -1,13 +1,13 @@
 /*
 
-Nota: En el enunciado no queda claro con qué condiciones un animal cae en la categoría de híbrido,
-por lo que asumí que si puede volar automáticamente se convierte en una especie híbrida.
-Las especies se clasifican en anfibio y mamífero siguiendo las siguientes condiciones:
+Nota: En el enunciado no queda claro con quÃ© condiciones un animal cae en la categorÃ­a de hÃ­brido,
+por lo que asumÃ­ que si puede volar automÃ¡ticamente se convierte en una especie hÃ­brida.
+Las especies se clasifican en anfibio y mamÃ­fero siguiendo las siguientes condiciones:
 
 -Si puede respirar bajo el agua, no tiene pelo y no vuela -> ANFIBIO
 -Si no puede respirar bajo el agua, tiene pelo y no vuela -> MAMIFERO
 
-Todas las demás combinaciones se tomaron como ESPECIE HIBRIDA
+Todas las demÃ¡s combinaciones se tomaron como ESPECIE HIBRIDA
 
 */
 
@@ -173,11 +173,11 @@ int main()
 			cin >> nombre;
 			cout << "Ingrese edad: " << endl;
 			cin >> edad;
-			cout << "¿Puede respirar bajo el agua? (1. Si, 0. No)" << endl;
+			cout << "Â¿Puede respirar bajo el agua? (1. Si, 0. No)" << endl;
 			cin >> puedeRespirarBajoElAgua;
-			cout << "¿Tiene pelo? (1. Si, 0. No)" << endl;
+			cout << "Â¿Tiene pelo? (1. Si, 0. No)" << endl;
 			cin >> tienePelo;
-			cout << "¿Puede volar? (1. Si, 0. No)" << endl;
+			cout << "Â¿Puede volar? (1. Si, 0. No)" << endl;
 			cin >> puedeVolar;
 			
 			EspecieHibrida* e = new EspecieHibrida(nombre, edad, puedeRespirarBajoElAgua, tienePelo, puedeVolar);
